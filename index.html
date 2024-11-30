@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Book Marker</title>
+     
+     
+    
+      <link rel="stylesheet" a href="css/bootstrap.min.css">
+<link rel="stylesheet" a href="css/all.min.css">
+<link rel="stylesheet" a href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container ">
+
+<h1 class="text-center">Book Marker</h1>
+<h2 class="text-center mt-5"><i class="fa-regular fa-bookmark"></i>
+     Bookmark your favorite sites <i class="fa-regular fa-bookmark"></i> </h2>
+     <div class="bookmark">
+<label for="bookmarkname" class="pb-2 fw-semibold" ><Site class="fa-solid fa-book-bookmark">  Site Name</i></label>
+<input oninput="demo(this.value)" type="text" placeholder="Bookmark Name" class="form-control " id="bookmark">
+</div>
+<div class="bookmarkurl mt-4">
+    <label for="bookmarkurl" class="pb-2 fw-semibold" ><i class="fa-solid fa-link">  Site Url</i></label>
+    <input oninput="demoo(this.value)" type="text" placeholder="Website URL" class="form-control " id="bookmarkurl">
+    </div>
+  
+   
+
+    <div class="button text-center">
+    <button onclick="site()" id="addbtn" type="button" class="btn  btn-danger mt-5 text-center">Submit</button>
+  
+    <button onclick="updatebtn()"  id="removebtn" type="button" class="btn d-none btn-warning mt-5 text-center">update</button>
+</div>
+<input onkeyup="searc(this.value)" id="searchid" type="text" placeholder="search" class="form-control w-50 my-5 mx-auto">
+<table class="table mt-4 text-center bg-light  ">
+<thead>
+    <tr>
+        <th>Index</th>
+        <th id="websitename">Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+        <th>Update</th>
+       
+    </tr>
+</thead>
+<tbody id="tablecontent">
+    <tr>
+        <td class="rownmr"></td>
+        <td></td>
+        <td><button onclick="visit(event)" id="visit" type="button" class="btn btn-success  text-center">Visit</button></td>
+        
+        <td><button onclick="dele()" id="dele" type="button" class="btn btn-danger  text-center">Delete</button></td>
+        <td><button onclick="setformupdate()" id="update" type="button" class="btn btn-warning  text-center">Update</button></td>
+       
+       </tr>
+    
+
+</tbody>
+</table>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="java/bootstrap.bundle.min.js"></script>
+    <script src="java/index.js"></script>
+    
+</body>
+
+
+</html>
